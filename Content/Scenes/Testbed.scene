@@ -83,11 +83,18 @@
 				}
 			},
 			"Mass": 163.6246337890625,
-			"Constraints": 40
+			"LinearDamping": 5.0,
+			"Constraints": 56
 		},
 		{
 			"ID": "b46c56e04b621f58ceb841b11d343b9c",
 			"TypeName": "Game.PlayerMovement",
+			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
+			"V": {}
+		},
+		{
+			"ID": "fcb2a2de45d52d85e4d0ebbb4bd5a0c4",
+			"TypeName": "Game.PlayerLook",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
 			"V": {}
 		},
@@ -139,21 +146,28 @@
 		{
 			"ID": "eb71b7f84b87a04334a2a4b2940cfac5",
 			"TypeName": "FlaxEngine.Camera",
-			"ParentID": "393760734adc087307422391922a31c0",
+			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
 			"Name": "Camera",
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 79.07415771484375,
+					"Y": 79.07417297363281,
 					"Z": 28.28216552734375
 				}
 			}
 		},
 		{
-			"ID": "412be7c0487171b6c12801957ccef7d5",
-			"TypeName": "Game.PlayerLook",
-			"ParentID": "eb71b7f84b87a04334a2a4b2940cfac5",
-			"V": {}
+			"ID": "68cf42fd4d42f43d8063018382ed18ad",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
+			"Name": "GroundCheck",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0000152587890625,
+					"Z": 0.0
+				}
+			}
 		},
 		{
 			"ID": "8091cf2d4d510ff12110a0bac8dabfbb",
@@ -165,11 +179,6 @@
 					"X": -600.0,
 					"Y": 0.0,
 					"Z": -600.0
-				},
-				"Scale": {
-					"X": 0.10000000149011612,
-					"Y": 1.0,
-					"Z": 0.10000000149011612
 				}
 			},
 			"LODCount": 6,

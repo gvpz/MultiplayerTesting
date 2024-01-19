@@ -1,49 +1,46 @@
 ﻿using FlaxEngine;
 
-namespace Game;
-
-/// <summary>
-/// PlayerLook Script.
-/// </summary>
-public class PlayerLook : Script
+namespace Game
 {
-    private Transform cam;
-    private Transform player;
-    
-    private float mouseX;
-    private float mouseY;
-
-    private float xRotation;
-    private float yRotation;
-    
-    private float sensitivity = 100;
-    private float rotationMultiplier = 1;
-    
-    public override void OnStart()
+    /// <summary>
+    /// PlayerLook Script.
+    /// </summary>
+    public class PlayerLook : Script
     {
-        Screen.CursorLock = CursorLockMode.Locked;
-        Screen.CursorVisible = false;
-        
-        cam = Actor.Transform;
-        player = Actor.Parent.Transform;
-    }
+        private Camera camera;
+        private Actor playerActor;
 
-    public override void OnFixedUpdate()
-    {
-        Look();
-    }
+        private float sensitivity = 10;
+        private float rotationMultiplier = 10;
 
-    private void Look()
-    {
-        mouseX = PlayerInput.MouseX;
-        mouseY = PlayerInput.MouseY;
+        private float _yaw;
+        private float _pitch;
 
-        xRotation -= mouseY * sensitivity * rotationMultiplier;
-        yRotation += mouseX * sensitivity * rotationMultiplier;
-        
-        xRotation = Mathf.Clamp(xRotation, -90, 90);
+        public override void OnStart()
+        {
+            Screen.CursorLock = CursorLockMode.Locked;
+            Screen.CursorVisible = false;
 
-        cam.Orientation = Quaternion.Euler(xRotation, 0, 0);
-        player.Orientation = Quaternion.Euler(0, yRotation, 0);
+            camera = Actor.GetChild<Camera>();
+            playerActor = Actor;
+        }
+
+        public override void OnUpdate()
+        {
+            Look();
+        }
+
+        private void Look()
+        {
+            var mouseX = PlayerInput.Instance.MouseX;
+            var mouseY = PlayerInput.Instance.MouseY;
+
+            _pitch = Mathf.Clamp(_pitch + mouseY, -88, 88);
+            _yaw += mouseX;
+
+            var camFactor = Mathf.Saturate(20f * Time.DeltaTime);
+            camera.LocalOrientation = Quaternion.Lerp(camera.LocalOrientation, Quaternion.Euler(_pitch, 0, 0), camFactor);
+            playerActor.Orientation = Quaternion.Lerp(playerActor.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
+        }
     }
 }

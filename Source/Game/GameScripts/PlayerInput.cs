@@ -6,25 +6,34 @@ namespace Game;
 /// <summary>
 /// PlayerInput Script.
 /// </summary>
-public class PlayerInput : Script
+public class PlayerInput : GamePlugin
 {
     
-    public static Action JumpPressed;
-    public static Action Fire;
-    public static Action SecondaryFire;
+    public Action JumpPressed;
+    public Action Fire;
+    public Action SecondaryFire;
 
 
-    public static Float2 MovementDirection;
+    public Float2 MovementDirection;
 
-    public static float MouseX;
-    public static float MouseY;
+    public float MouseX;
+    public float MouseY;
 
-    public override void OnUpdate()
+    public override void Initialize()
     {
+        Scripting.Update += OnUpdate;
+    }
 
+    public override void Deinitialize()
+    {
+        Scripting.Update -= OnUpdate;
+    }
+
+    public void OnUpdate()
+    {
         MovementDirection.X = Input.GetAxisRaw("Horizontal");
         MovementDirection.Y = Input.GetAxisRaw("Vertical");
-
+        
         MouseX = Input.GetAxisRaw("Mouse X");
         MouseY = Input.GetAxisRaw("Mouse Y");
         
@@ -43,5 +52,16 @@ public class PlayerInput : Script
             SecondaryFire?.Invoke();
         }
     }
-    
+
+    private static PlayerInput instance;
+
+    public static PlayerInput Instance
+    {
+        get
+        {
+            if (instance == null)
+                instance = PluginManager.GetPlugin<PlayerInput>();
+            return instance;
+        }
+    }
 }

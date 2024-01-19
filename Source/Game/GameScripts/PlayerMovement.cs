@@ -8,11 +8,15 @@ namespace Game;
 public class PlayerMovement : Script
 {
     private RigidBody rb;
+    private Vector3 groundCheck;
 
     private float moveSpeed = 50;
-    private float speedMultiplier = 1;
+    private float speedMultiplier = 100;
     private float maxSpeed = 10;
-    private Vector2 moveDirection;
+    private float jumpForce = 750;
+    private Float2 moveDirection;
+
+    private bool IsGrounded() => Physics.CheckSphere(groundCheck, 0.2f, layerMask: 1 << 3);
     
     
     public override void OnStart()
@@ -22,31 +26,33 @@ public class PlayerMovement : Script
 
     public override void OnEnable()
     {
-        PlayerInput.JumpPressed += Jump;
+        PlayerInput.Instance.JumpPressed += Jump;
     }
     
     public override void OnDisable()
     {
-        PlayerInput.JumpPressed -= Jump;
+        PlayerInput.Instance.JumpPressed -= Jump;
     }
 
-    public override void OnFixedUpdate()
+    public override void OnUpdate()
     {
         Move();
     }
 
     private void Move()
     {
-        moveDirection = PlayerInput.MovementDirection;
+        moveDirection = PlayerInput.Instance.MovementDirection;
         var trueMoveDir = new Vector3(moveDirection.X, 0, moveDirection.Y);
+        trueMoveDir = trueMoveDir.Normalized;
 
         rb.MaxAngularVelocity = maxSpeed;
-        rb.AddRelativeForce(trueMoveDir * moveSpeed * speedMultiplier, ForceMode.VelocityChange);
+        rb.AddRelativeForce(trueMoveDir * moveSpeed * speedMultiplier * Time.DeltaTime, ForceMode.VelocityChange);
     }
 
     private void Jump()
     {
-        Debug.Log("JUMP");
+        if (!IsGrounded()) return;
+        rb.AddForce(Vector3.Up * jumpForce, ForceMode.VelocityChange);
     }
     
     /*
