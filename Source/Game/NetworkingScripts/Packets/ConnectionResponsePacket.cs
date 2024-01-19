@@ -18,7 +18,6 @@ public class ConnectionResponsePacket : Packet
     public ConnectionState State;
     public Guid ID = Guid.Empty;
     public Guid SceneID = Guid.Empty;
-    //Need to change SceneID to int
 
     public override void Serialize(ref NetworkMessage message)
     {
@@ -50,11 +49,13 @@ public class ConnectionResponsePacket : Packet
     {
         if (State == ConnectionState.Accepted)
         {
+            Debug.Log("Server accepted connection");
             GameSession.Instance.localPlayer.ID = ID;
-            Level.LoadSceneAsync(SceneID);
+            SceneManager.Instance.LoadScene(SceneID, Level.GetScene(0));
         }
         else
         {
+            NetworkManager.Instance.Disconnect();
             Debug.Log("Connection Rejected");
         }
     }

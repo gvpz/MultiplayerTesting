@@ -27,7 +27,9 @@
 			"ID": "ea4597b84b2364eeedf24985c85a43e0",
 			"TypeName": "Game.MainMenuScript",
 			"ParentID": "42f9f8ab410b17196f68c296b909e1e9",
-			"V": {}
+			"V": {
+	"testBed": "0e4248184caa701b5513aaadf921e96e"
+}
 		},
 		{
 			"ID": "98a7d5cc4a7b394398ba418ca7b9ce10",

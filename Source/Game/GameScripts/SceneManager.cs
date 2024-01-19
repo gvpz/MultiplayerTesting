@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using FlaxEditor;
 using FlaxEngine;
 
 namespace Game;
@@ -9,21 +10,21 @@ namespace Game;
 /// </summary>
 public class SceneManager : GamePlugin
 {
-    public Guid currentScene = Guid.Empty;
-    public string[] sceneStrings = {"1267625e-4d26-483a-9f29-631bc6b7c248", "0e424818-701b-4caa-adaa-13556ee921f9"};
-    public List<Guid> scenes = new List<Guid>();
 
     public override void Initialize()
     {
-        foreach (var id in sceneStrings)
-        {
-            scenes.Add(Guid.Parse(id));
-        }
+        //Scripting.FixedUpdate += FixedUpdate;
     }
     
-    public void LoadScene(int scene)
+    public void LoadScene(Guid scene, Scene currentScene)
     {
-        Level.LoadSceneAsync(scenes[scene]);
+        Level.LoadScene(scene);
+        Level.UnloadScene(currentScene);
+    }
+
+    public void FixedUpdate()
+    {
+        
     }
 
     public static SceneManager instance;

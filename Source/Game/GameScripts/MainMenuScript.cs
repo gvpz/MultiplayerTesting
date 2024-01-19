@@ -25,10 +25,11 @@ public class MainMenuScript : Script
     private string hostPortString;
     private string joinPortString;
     private string joinIPString;
+
+    public SceneReference testBed;
     
     public override void OnStart()
     {
-        
         usernameInput = Actor.Scene.FindActor<UIControl>("UsernameInput");
         hostButton = Actor.Scene.FindActor<UIControl>("HostPlayButton");
         hostPortInput = Actor.Scene.FindActor<UIControl>("HostPortInput");
@@ -43,7 +44,6 @@ public class MainMenuScript : Script
 
     public override void OnUpdate()
     {
-        
         username = ((TextBox)usernameInput.Control).Text;
         
         hostPortString = ((TextBox)hostPortInput.Control).Text;
@@ -55,27 +55,18 @@ public class MainMenuScript : Script
 
     private void Host()
     {
-        Debug.Log("Calling MainMenuScript.Host()");
-
         if (!ushort.TryParse(hostPortString, out var port)) port = 7777;
         username ??= "Player";
         
-        if (!NetworkManager.Instance.Host("username", 7777)) return;
-        
-        Debug.Log("NetworkManager.Host() = true.  Calling Level.LoadScene");
-        
-        SceneManager.Instance.LoadScene(1);
-        
+        if (!NetworkManager.Instance.Host(username, port)) return;
+        SceneManager.Instance.LoadScene(testBed.ID, Level.GetScene(0));
     }
 
     private void Join()
     {
-        if (ushort.TryParse(joinPortString, out var port))
-            NetworkManager.Instance.Connect(username, joinIPString, port);
-    }
+        if (!ushort.TryParse(joinPortString, out var port)) port = 7777;
 
-    private async void DisableButtons()
-    {
+        if (!NetworkManager.Instance.Connect(username, joinIPString, port)) return;
         
     }
 }

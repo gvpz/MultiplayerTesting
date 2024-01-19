@@ -29,7 +29,6 @@ public class NetworkManager : GamePlugin
     public override void Initialize()
     {
         base.Initialize();
-        isConnected = false;
         packetManager = new PacketManager();
         connectionManager = new ConnectionManager();
 
@@ -60,8 +59,11 @@ public class NetworkManager : GamePlugin
         //If client is Server
         if (isServer)
         {
+            Debug.Log(peer.PopEvent(out var eventRef));
+            Debug.Log(eventRef);
             while (peer.PopEvent(out var eventData))
             {
+                Debug.Log("Server: " + eventData);
                 if (eventData.EventType == NetworkEventType.Connected)
                 {
                     connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
@@ -87,7 +89,14 @@ public class NetworkManager : GamePlugin
         {
             while (peer.PopEvent(out var eventData))
             {
-                if (eventData.EventType == NetworkEventType.Connected)
+                Debug.Log("Client: " + eventData);
+                if (eventData.EventType == NetworkEventType.Message)
+                {
+                    packetManager.Receive(ref eventData, isServer);
+                    peer.RecycleMessage(eventData.Message);
+                    Debug.Log("Message Received");
+                }
+                else if (eventData.EventType == NetworkEventType.Connected)
                 {
                     Send(new ConnectionRequestPacket() { Username = GameSession.Instance.localPlayer.Name },
                         NetworkChannelType.ReliableOrdered);
@@ -100,12 +109,7 @@ public class NetworkManager : GamePlugin
                     NetworkPeer.ShutdownPeer(peer);
                     Debug.Log("Timed out/Disconnected");
                 }
-                else if (eventData.EventType == NetworkEventType.Message)
-                {
-                    packetManager.Receive(ref eventData, isServer);
-                    peer.RecycleMessage(eventData.Message);
-                    Debug.Log("Message Received");
-                }
+
             }
         }
     }
@@ -141,9 +145,6 @@ public class NetworkManager : GamePlugin
     //Connects player to IP (address) and Port (port) with a Username (username)
     public bool Connect(string username, string address, ushort port)
     {
-        if (isConnected)
-            peer.Disconnect();
-
         peer = NetworkPeer.CreatePeer(new NetworkConfig
         {
             NetworkDriver = new ENetDriver(),
