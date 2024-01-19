@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Game.CSharp</name>
+    </assembly>
+    <members>
+        <member name="T:Game.GameSession">
+            <summary>
+            GameSession Script.
+            </summary>
+        </member>
+        <member name="T:Game.MainMenuScript">
+            <summary>
+            MainMenuScript Script.
+            </summary>
+        </member>
+        <member name="T:Game.Player">
+            <summary>
+            Player Script.
+            </summary>
+        </member>
+        <member name="T:Game.PlayerInput">
+            <summary>
+            PlayerInput Script.
+            </summary>
+        </member>
+        <member name="T:Game.PlayerLook">
+            <summary>
+            PlayerLook Script.
+            </summary>
+        </member>
+        <member name="T:Game.PlayerMovement">
+            <summary>
+            PlayerMovement Script.
+            </summary>
+        </member>
+        <member name="T:Game.SceneManager">
+            <summary>
+            SceneManager Script.
+            </summary>
+        </member>
+        <member name="T:Game.ConnectionManager">
+            <summary>
+            ConnectionManager Script.
+            </summary>
+        </member>
+        <member name="T:Game.NetworkManager">
+            <summary>
+            NetworkManager Script.
+            </summary>
+        </member>
+        <member name="T:Game.PacketManager">
+            <summary>
+            PacketManager Script.
+            </summary>
+        </member>
+        <member name="T:Game.ConnectionRequestPacket">
+            <summary>
+            ConnectionRequestPacket Script.
+            </summary>
+        </member>
+        <member name="T:Game.ConnectionResponsePacket">
+            <summary>
+            ConnectionResponsePacket Script.
+            </summary>
+        </member>
+        <member name="T:Game.Packet">
+            <summary>
+            Packet Script.
+            </summary>
+        </member>
+        <member name="T:Game.PlayerListPacket">
+            <summary>
+            PlayerListPacket Script.
+            </summary>
+        </member>
+    </members>
+</doc>

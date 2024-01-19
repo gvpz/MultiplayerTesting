@@ -1,0 +1,76 @@
+[00:00:012] Flax.Build 1.0.0
+[00:00:012]   Arguments: -log "-logfile=C:\Users/Admin/Documents/Flax Projects/Multiplayer Testing/Cache/Cooker/Windows/CompileLog.txt" -build -mutex -buildtargets=GameTarget -platform=Windows -arch=x64 -configuration=Development -aotMode=None -dotnet=7
+[00:00:012]   Workspace: C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing
+[00:00:012]   Engine: C:\Program Files (x86)\Flax\Flax_1.7
+[00:00:012]   .NET 7.0.11
+[00:00:018] Loading project file from "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.flaxproj"...
+[00:00:054] Loading project file from "C:\Program Files (x86)\Flax\Flax_1.7\Flax.flaxproj"...
+[00:00:054] Loaded project Flax, version 1.7.6407.2
+[00:00:054] Loaded project Multiplayer Testing, version 1.0
+[00:00:085] Engine build version: 1.7.6407.2
+[00:00:113] Building targets...
+[00:00:141] Missing Android SDK. Cannot build for Android platform.
+[00:00:142] Missing Linux Toolchain. Cannot build for Linux platform.
+[00:00:161] Found VisualStudio2022 at C:\Program Files\Microsoft Visual Studio\2022\Community
+[00:00:163] Missing Windows SDK. Cannot build for Windows platform.
+[00:00:164] Building C# only
+[00:00:164] Building target GameTarget in Development for Windows x64
+[00:00:170] Building referenced target Flax
+[00:00:180] Parsing API bindings for Profiler (FlaxEngine)
+[00:00:262] Parsing API bindings for Platform (FlaxEngine)
+[00:00:365] Parsing API bindings for Core (FlaxEngine)
+[00:01:234] Parsing API bindings for Physics (FlaxEngine)
+[00:01:361] Parsing API bindings for TextureTool (FlaxEngine)
+[00:01:367] Parsing API bindings for ModelTool (FlaxEngine)
+[00:01:378] Found VulkanSDK at: C:\VulkanSDK\1.3.268.0
+[00:01:378] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
+[00:01:381] Parsing API bindings for Graphics (FlaxEngine)
+[00:01:663] Parsing API bindings for Utilities (FlaxEngine)
+[00:01:665] Parsing API bindings for Particles (FlaxEngine)
+[00:01:684] Parsing API bindings for Content (FlaxEngine)
+[00:01:775] Parsing API bindings for Renderer (FlaxEngine)
+[00:01:801] Found the following .NET SDK versions: 7.0.401
+[00:01:802] Found the following .NET runtime versions: 7.0.11, 6.0.22
+[00:01:805] Using .NET SDK 7.0.401, runtime 7.0.11 (C:\Program Files\dotnet\)
+[00:01:806]   - Host Runtime for Windows x64
+[00:01:806]   - Host Runtime for Windows x86
+[00:01:806]   - Host Runtime for Windows ARM64
+[00:01:809] Parsing API bindings for Scripting (FlaxEngine)
+[00:01:832] Parsing API bindings for Serialization (FlaxEngine)
+[00:01:835] Parsing API bindings for Level (FlaxEngine)
+[00:02:006] Parsing API bindings for Navigation (FlaxEngine)
+[00:02:024] Parsing API bindings for AI (FlaxEngine)
+[00:02:055] Parsing API bindings for Visject (FlaxEngine)
+[00:02:066] Parsing API bindings for Animations (FlaxEngine)
+[00:02:112] Parsing API bindings for Audio (FlaxEngine)
+[00:02:138] Parsing API bindings for Debug (FlaxEngine)
+[00:02:173] Parsing API bindings for Foliage (FlaxEngine)
+[00:02:224] Parsing API bindings for Render2D (FlaxEngine)
+[00:02:254] Parsing API bindings for Input (FlaxEngine)
+[00:02:282] Parsing API bindings for Networking (FlaxEngine)
+[00:02:321] Parsing API bindings for Streaming (FlaxEngine)
+[00:02:324] Parsing API bindings for Terrain (FlaxEngine)
+[00:02:332] Parsing API bindings for Threading (FlaxEngine)
+[00:02:337] Parsing API bindings for Localization (FlaxEngine)
+[00:02:344] Parsing API bindings for UI (FlaxEngine)
+[00:02:350] Parsing API bindings for Online (FlaxEngine)
+[00:02:353] Parsing API bindings for Engine (FlaxEngine)
+[00:02:365] Skipping build for target FlaxGame
+[00:02:380] Generating binary module bindings for Game
+[00:02:383] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.Gen.cs
+[00:02:383] Building module Game
+[00:02:398] Saved file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache/Intermediate\GameTarget\Windows\x64\Development\Game.CSharp.response
+[00:02:413] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Binaries\GameTarget\Windows\x64\Development\GameTarget.Build.json
+[00:02:419] Found 3 valid and 0 invalid actions in Task Graph cache
+[00:02:420] 
+[00:02:420] Total 3 tasks
+[00:02:420] Executing 3 tasks using 3 threads
+[00:02:421] Compiling C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Binaries\GameTarget\Windows\x64\Development\Game.CSharp.dll
+[00:02:470] C:\Program Files (x86)\Flax\Flax_1.7\Source\Platforms\DotNet\Newtonsoft.Json.xml
+[00:02:476] C:\Program Files (x86)\Flax\Flax_1.7\Source\Platforms\DotNet\Newtonsoft.Json.dll
+[00:02:476] 1 File(s) copied
+[00:02:479] 1 File(s) copied
+[00:02:925] C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\GameScripts\MainMenuScript.cs(77,24,77,38): warning CS1998: This async method lacks 'await' operators and will run synchronously. Consider using the 'await' operator to await non-blocking API calls, or 'await Task.Run(...)' to do CPU-bound work on a background thread.
+[00:02:934] Done!
+[00:02:939] Total time: 00:00:02.9607770
+[00:02:939] End.

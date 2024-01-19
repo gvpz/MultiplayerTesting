@@ -1,0 +1,6 @@
+Missing Android SDK. Cannot build for Android platform.
+DotNetSdk, 7.0.401.9999, C:\Program Files\dotnet\
+AndroidNdk, missing
+AndroidSdk, missing
+XCode, missing
+GDK, missing
