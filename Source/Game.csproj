@@ -190,6 +190,7 @@
     <Compile Include="Game\NetworkingScripts\ConnectionManager.cs" />
     <Compile Include="Game\NetworkingScripts\Hashing.cs" />
     <Compile Include="Game\NetworkingScripts\NetworkManager.cs" />
+    <Compile Include="Game\NetworkingScripts\NetworkPlayer.cs" />
     <Compile Include="Game\NetworkingScripts\PacketManager.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\ConnectionRequestPacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\ConnectionResponsePacket.cs" />

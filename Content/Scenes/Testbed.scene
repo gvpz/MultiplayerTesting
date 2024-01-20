@@ -72,102 +72,63 @@
 		},
 		{
 			"ID": "83ef28364e29b174242a848f4f64fa1d",
-			"TypeName": "FlaxEngine.RigidBody",
-			"ParentID": "0e4248184caa701b5513aaadf921e96e",
-			"Name": "Player",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 73.62507629394531,
-					"Z": 0.0
-				}
-			},
-			"Mass": 163.6246337890625,
-			"LinearDamping": 5.0,
-			"Constraints": 56
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "ca092d49495081676c078f8ffeb3428f",
+			"ParentID": "0e4248184caa701b5513aaadf921e96e"
 		},
 		{
 			"ID": "b46c56e04b621f58ceb841b11d343b9c",
-			"TypeName": "Game.PlayerMovement",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "3ec65571465077b8ec1181a68cdbae26",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
 			"V": {}
 		},
 		{
 			"ID": "fcb2a2de45d52d85e4d0ebbb4bd5a0c4",
-			"TypeName": "Game.PlayerLook",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "1663755a41f122aa395cd5a1e4a0ae6e",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
 			"V": {}
 		},
 		{
 			"ID": "da77dad7442f161057347ba722cb7a70",
-			"TypeName": "FlaxEngine.CapsuleCollider",
-			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
-			"Name": "CapsuleCollider",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 50.00001525878906,
-					"Z": 0.0
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 0.7071068286895752,
-					"W": 0.7071068286895752
-				}
-			},
-			"Radius": 25.0,
-			"Height": 50.0
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "94ea592241407829689f97986c10f41a",
+			"ParentID": "83ef28364e29b174242a848f4f64fa1d"
 		},
 		{
 			"ID": "393760734adc087307422391922a31c0",
-			"TypeName": "FlaxEngine.StaticModel",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "462e76834e5b95f78a24f6ba50d60254",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
-			"Name": "PlayerModel",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0000152587890625,
-					"Z": 0.0
-				}
-			},
-			"Model": "3f82e57744f57c28285150b646ad2198",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{}
 				]
 			}
 		},
 		{
 			"ID": "eb71b7f84b87a04334a2a4b2940cfac5",
-			"TypeName": "FlaxEngine.Camera",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "fe61ebcb4328157f811d188b63b82c1b",
+			"ParentID": "83ef28364e29b174242a848f4f64fa1d"
+		},
+		{
+			"ID": "6799a1694ce944bf7acbec980cb88a22",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "47fe15b5440d9e9727233b98ba6e884c",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
-			"Name": "Camera",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 79.07417297363281,
-					"Z": 28.28216552734375
-				}
+			"Buffer": {
+				"Entries": [
+					{}
+				]
 			}
 		},
 		{
-			"ID": "68cf42fd4d42f43d8063018382ed18ad",
+			"ID": "90771d51480701c8bc04928e965afbf2",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
-			"Name": "GroundCheck",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 0.0000152587890625,
-					"Z": 0.0
-				}
-			}
+			"Name": "GroundCheck"
 		},
 		{
 			"ID": "8091cf2d4d510ff12110a0bac8dabfbb",
@@ -181,6 +142,7 @@
 					"Z": -600.0
 				}
 			},
+			"Layer": 3,
 			"LODCount": 6,
 			"ChunkSize": 31,
 			"Patches": [

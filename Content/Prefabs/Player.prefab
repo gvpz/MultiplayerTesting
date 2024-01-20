@@ -1,0 +1,127 @@
+{
+	"ID": "24757501460b619408bd64813444cd5e",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6407,
+	"Data": [
+	{
+		"ID": "ca092d49495081676c078f8ffeb3428f",
+		"TypeName": "FlaxEngine.RigidBody",
+		"Name": "Player",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 12.625076293945313,
+				"Z": 0.0
+			}
+		},
+		"Mass": 163.6246337890625,
+		"LinearDamping": 5.0,
+		"Constraints": 56
+	},
+	{
+		"ID": "7e45a4634b9e4e0ad019b9a3e4d6897f",
+		"TypeName": "Game.PlayerMovement",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"V": {}
+	},
+	{
+		"ID": "1663755a41f122aa395cd5a1e4a0ae6e",
+		"TypeName": "Game.PlayerLook",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"V": {}
+	},
+	{
+		"ID": "94ea592241407829689f97986c10f41a",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 50.00001525878906,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Radius": 25.0,
+		"Height": 50.0
+	},
+	{
+		"ID": "462e76834e5b95f78a24f6ba50d60254",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"Name": "PlayerModel",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 0.0000152587890625,
+				"Z": 0.0
+			}
+		},
+		"Model": "3f82e57744f57c28285150b646ad2198",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "fe61ebcb4328157f811d188b63b82c1b",
+		"TypeName": "FlaxEngine.Camera",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"Name": "Camera",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 79.07417297363281,
+				"Z": 28.28216552734375
+			}
+		}
+	},
+	{
+		"ID": "47fe15b5440d9e9727233b98ba6e884c",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"Name": "Cube",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 75.0,
+				"Z": 25.0
+			},
+			"Scale": {
+				"X": 0.20000000298023225,
+				"Y": 0.10000000149011612,
+				"Z": 0.10000000149011612
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "a008ce52487552391366c988fb034dad",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "ca092d49495081676c078f8ffeb3428f",
+		"Name": "GroundCheck"
+	}
+]
+}

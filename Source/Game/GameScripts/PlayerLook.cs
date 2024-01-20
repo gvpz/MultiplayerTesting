@@ -42,5 +42,10 @@ namespace Game
             camera.LocalOrientation = Quaternion.Lerp(camera.LocalOrientation, Quaternion.Euler(_pitch, 0, 0), camFactor);
             playerActor.Orientation = Quaternion.Lerp(playerActor.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
         }
+
+        public static void SendRotationPacket(ref Packet changeThisToTransformPacket)
+        {
+            //Implement logic for sending rotation packet from a packet reference
+        }
     }
 }

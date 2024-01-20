@@ -1,0 +1,87 @@
+{
+	"ID": "86566d6a41f13d7c7ea020abadaaa10e",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6407,
+	"Data": [
+	{
+		"ID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"TypeName": "FlaxEngine.RigidBody",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "NetworkPlayer",
+		"Mass": 163.6246337890625
+	},
+	{
+		"ID": "55b7c97148bc942d2c51d2b4e1dfd616",
+		"TypeName": "Game.NetworkPlayer",
+		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"V": {}
+	},
+	{
+		"ID": "e1b2048a4abbf967062806aefcc0f2a3",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"Name": "NetworkPlayerModel",
+		"Model": "3f82e57744f57c28285150b646ad2198",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "2b74aad642da642e40db86bdc7c251fb",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 50.00001525878906,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"Radius": 25.0,
+		"Height": 50.0
+	},
+	{
+		"ID": "1ecdf20548cfa6a1e3960abe129f85d7",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"Name": "Cube",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 75.0,
+				"Z": 25.0
+			},
+			"Scale": {
+				"X": 0.20000000298023225,
+				"Y": 0.10000000149011612,
+				"Z": 0.10000000149011612
+			}
+		},
+		"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}
