@@ -89,4 +89,5 @@
 "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\NetworkingScripts\Packets\ConnectionResponsePacket.cs"
 "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\NetworkingScripts\Packets\Packet.cs"
 "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\NetworkingScripts\Packets\PlayerListPacket.cs"
+"C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\NetworkingScripts\Packets\PlayerTransformPacket.cs"
 "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache/Intermediate\GameEditorTarget\Windows\x64\Development\Game.CSharp.AssemblyAttributes.cs"

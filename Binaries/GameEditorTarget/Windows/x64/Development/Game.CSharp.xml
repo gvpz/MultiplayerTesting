@@ -91,5 +91,10 @@
             PlayerListPacket Script.
             </summary>
         </member>
+        <member name="T:Game.PlayerTransformPacket">
+            <summary>
+            PlayerTransformPacket Script.
+            </summary>
+        </member>
     </members>
 </doc>

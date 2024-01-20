@@ -64,23 +64,31 @@ public class NetworkManager : GamePlugin
             while (peer.PopEvent(out var eventData))
             {
                 Debug.Log("Server: " + eventData);
-                if (eventData.EventType == NetworkEventType.Connected)
+                switch (eventData.EventType)
                 {
-                    connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
-                    Debug.Log(eventData.Sender + " has connected!");
-                }
-                else if (eventData.EventType == NetworkEventType.Disconnected || 
-                         eventData.EventType == NetworkEventType.Timeout)
-                {
-                    var guid = GuidByConnection(ref eventData.Sender);
-                    connectionManager.Remove(ref guid);
-                    GameSession.Instance.RemovePlayer(ref guid);
-                    Debug.Log(eventData.Sender + " has disconnected!");
-                }
-                else if (eventData.EventType == NetworkEventType.Message)
-                {
-                    packetManager.Receive(ref eventData, isServer);
-                    peer.RecycleMessage(eventData.Message);
+                    case NetworkEventType.Connected:
+                    {
+                        packetManager.Receive(ref eventData, isServer);
+                        connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
+                        Debug.Log(eventData.Sender + " has connected!");
+                        break;
+                    }
+                    case NetworkEventType.Disconnected:
+                    case NetworkEventType.Timeout:
+                    {
+                        packetManager.Receive(ref eventData, isServer);
+                        var guid = GuidByConnection(ref eventData.Sender);
+                        connectionManager.Remove(ref guid);
+                        GameSession.Instance.RemovePlayer(ref guid);
+                        Debug.Log(eventData.Sender + " has disconnected!");
+                        break;
+                    }
+                    case NetworkEventType.Message:
+                    {
+                        packetManager.Receive(ref eventData, isServer);
+                        peer.RecycleMessage(eventData.Message);
+                        break;
+                    }
                 }
             }
         }
@@ -90,26 +98,31 @@ public class NetworkManager : GamePlugin
             while (peer.PopEvent(out var eventData))
             {
                 Debug.Log("Client: " + eventData);
-                if (eventData.EventType == NetworkEventType.Message)
+                switch (eventData.EventType)
                 {
-                    packetManager.Receive(ref eventData, isServer);
-                    peer.RecycleMessage(eventData.Message);
-                    Debug.Log("Message Received");
+                    case NetworkEventType.Message:
+                    {
+                        packetManager.Receive(ref eventData, isServer);
+                        peer.RecycleMessage(eventData.Message);
+                        Debug.Log("Message Received");
+                        break;
+                    }
+                    case NetworkEventType.Connected:
+                    {
+                        Send(new ConnectionRequestPacket { Username = GameSession.Instance.localPlayer.Name },
+                            NetworkChannelType.ReliableOrdered);
+                        Debug.Log("Sent connection request packet");
+                        break;
+                    }
+                    case NetworkEventType.Disconnected:
+                    case NetworkEventType.Timeout:
+                    {
+                        Disconnect();
+                        NetworkPeer.ShutdownPeer(peer);
+                        Debug.Log("Timed out/Disconnected");
+                        break;
+                    }
                 }
-                else if (eventData.EventType == NetworkEventType.Connected)
-                {
-                    Send(new ConnectionRequestPacket() { Username = GameSession.Instance.localPlayer.Name },
-                        NetworkChannelType.ReliableOrdered);
-                    Debug.Log("Sent connection request packet");
-                }
-                else if (eventData.EventType == NetworkEventType.Disconnected ||
-                         eventData.EventType == NetworkEventType.Timeout)
-                {
-                    Disconnect();
-                    NetworkPeer.ShutdownPeer(peer);
-                    Debug.Log("Timed out/Disconnected");
-                }
-
             }
         }
     }
@@ -117,7 +130,6 @@ public class NetworkManager : GamePlugin
     //Makes player the host of the server through designated Port (port) with Username (username)
     public bool Host(string username, ushort port)
     {
-        Debug.Log("Calling NetworkManager.Host()");
         try
         {
             peer = NetworkPeer.CreatePeer(new NetworkConfig
@@ -145,6 +157,7 @@ public class NetworkManager : GamePlugin
     //Connects player to IP (address) and Port (port) with a Username (username)
     public bool Connect(string username, string address, ushort port)
     {
+        Debug.Log("Connecting");
         peer = NetworkPeer.CreatePeer(new NetworkConfig
         {
             NetworkDriver = new ENetDriver(),
@@ -205,11 +218,6 @@ public class NetworkManager : GamePlugin
             try
             {
                 string response = await httpClient.GetStringAsync("https://api64.ipify.org?format=json");
-                // Parse the JSON response to get the public IP address
-                // The response format typically includes the IP address in a property like "ip"
-                // Example: {"ip":"123.456.789.012"}
-                // You can use a JSON parsing library or simple string manipulation to extract the IP address.
-                // For simplicity, let's assume a straightforward case:
                 int startIndex = response.IndexOf("\"ip\":\"") + 6;
                 int endIndex = response.IndexOf("\"", startIndex);
                 return response.Substring(startIndex, endIndex - startIndex);

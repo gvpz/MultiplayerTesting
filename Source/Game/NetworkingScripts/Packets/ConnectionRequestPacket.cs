@@ -22,6 +22,7 @@ public class ConnectionRequestPacket : Packet
 
     public override void ServerHandler(ref NetworkConnection connection)
     {
+        Debug.Log("Received Connection Request");
         //Sends a connection response
         ConnectionResponsePacket responsePacket = new ConnectionResponsePacket();
         responsePacket.ID = NetworkManager.Instance.GuidByConnection(ref connection);

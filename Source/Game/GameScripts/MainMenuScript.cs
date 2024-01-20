@@ -44,6 +44,9 @@ public class MainMenuScript : Script
 
     public override void OnUpdate()
     {
+        Screen.CursorLock = CursorLockMode.None;
+        Screen.CursorVisible = true;
+        
         username = ((TextBox)usernameInput.Control).Text;
         
         hostPortString = ((TextBox)hostPortInput.Control).Text;
@@ -65,8 +68,6 @@ public class MainMenuScript : Script
     private void Join()
     {
         if (!ushort.TryParse(joinPortString, out var port)) port = 7777;
-
-        if (!NetworkManager.Instance.Connect(username, joinIPString, port)) return;
-        
+        NetworkManager.Instance.Connect(username, joinIPString, port);
     }
 }

@@ -77,9 +77,9 @@
 			"ParentID": "0e4248184caa701b5513aaadf921e96e"
 		},
 		{
-			"ID": "b46c56e04b621f58ceb841b11d343b9c",
+			"ID": "86aa63234f39719c8f04f9a221de1dd4",
 			"PrefabID": "24757501460b619408bd64813444cd5e",
-			"PrefabObjectID": "3ec65571465077b8ec1181a68cdbae26",
+			"PrefabObjectID": "7e45a4634b9e4e0ad019b9a3e4d6897f",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
 			"V": {}
 		},
@@ -125,10 +125,17 @@
 			}
 		},
 		{
-			"ID": "90771d51480701c8bc04928e965afbf2",
-			"TypeName": "FlaxEngine.EmptyActor",
+			"ID": "fb92fbd54c78dcaff31c8babc8a4d246",
+			"PrefabID": "24757501460b619408bd64813444cd5e",
+			"PrefabObjectID": "a008ce52487552391366c988fb034dad",
 			"ParentID": "83ef28364e29b174242a848f4f64fa1d",
-			"Name": "GroundCheck"
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 10.0,
+					"Z": 0.0
+				}
+			}
 		},
 		{
 			"ID": "8091cf2d4d510ff12110a0bac8dabfbb",

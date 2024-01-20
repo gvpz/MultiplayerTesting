@@ -196,6 +196,7 @@
     <Compile Include="Game\NetworkingScripts\Packets\ConnectionResponsePacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\Packet.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\PlayerListPacket.cs" />
+    <Compile Include="Game\NetworkingScripts\Packets\PlayerTransformPacket.cs" />
     <Compile Visible="false" Include="C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Intermediate\GameEditorTarget\Windows\x64\Debug\Game\Game.Bindings.Gen.cs" />
     <Compile Visible="false" Include="C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Intermediate\GameEditorTarget\Windows\x64\Development\Game\Game.Bindings.Gen.cs" />
     <Compile Visible="false" Include="C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Intermediate\GameEditorTarget\Windows\x64\Release\Game\Game.Bindings.Gen.cs" />

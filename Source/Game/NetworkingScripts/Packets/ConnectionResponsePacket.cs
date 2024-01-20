@@ -47,6 +47,7 @@ public class ConnectionResponsePacket : Packet
 
     public override void ClientHandler()
     {
+        Debug.Log("Received Connection Response");
         if (State == ConnectionState.Accepted)
         {
             Debug.Log("Server accepted connection");

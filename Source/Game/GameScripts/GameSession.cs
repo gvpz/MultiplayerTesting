@@ -22,9 +22,7 @@ public class GameSession : GamePlugin
     
     public override void Initialize()
     {
-        base.Initialize();
-
-        Scripting.Update += OnUpdate;
+        localPlayer = new Player();
     }
 
     public override void Deinitialize()
@@ -86,11 +84,6 @@ public class GameSession : GamePlugin
         }
 
         return null;
-    }
-
-    private void OnUpdate()
-    {
-        
     }
 
 

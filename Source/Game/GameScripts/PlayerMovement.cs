@@ -16,6 +16,8 @@ public class PlayerMovement : Script
     private float speedMultiplier = 100;
     private float maxSpeed = 10;
     private float jumpForce = 750;
+    private float movementDrag = 5;
+    private float stoppingDrag = 10;
     private Float2 moveDirection;
 
     private bool IsGrounded() => Physics.RayCast(groundCheck, Vector3.Down, 15f, layerMask: 1 << 3);
@@ -24,7 +26,7 @@ public class PlayerMovement : Script
     public override void OnStart()
     {
         rb = Actor.Scene.GetChild<RigidBody>();
-        
+        rb.MaxAngularVelocity = maxSpeed;
     }
 
     public override void OnEnable()
@@ -39,14 +41,8 @@ public class PlayerMovement : Script
 
     public override void OnUpdate()
     {
-        groundCheck = Actor.GetChild("GroundCheck").Position;
-        
-        Debug.Log($"GroundCheck Position: {groundCheck}");
-        Debug.Log($"IsGrounded: {IsGrounded()}");
-        
         Move();
         DetermineGravity();
-        
     }
 
     private void Move()
@@ -54,24 +50,30 @@ public class PlayerMovement : Script
         moveDirection = PlayerInput.Instance.MovementDirection;
         var trueMoveDir = new Vector3(moveDirection.X, 0, moveDirection.Y);
         trueMoveDir = trueMoveDir.Normalized;
-
-        rb.MaxAngularVelocity = maxSpeed;
+        
         rb.AddRelativeForce(trueMoveDir * moveSpeed * speedMultiplier * Time.DeltaTime, ForceMode.VelocityChange);
+
+        rb.LinearDamping = moveDirection == Float2.Zero ? stoppingDrag : movementDrag;
     }
 
     private void Jump()
     {
-        Debug.Log("Space pressed");
         if (!IsGrounded()) return;
-        Debug.Log("Jump");
         rb.AddForce(Vector3.Up * jumpForce, ForceMode.VelocityChange);
     }
 
     private void DetermineGravity()
     {
+        groundCheck = rb.GetChild("GroundCheck").Position;
+
         if (Physics.RayCast(groundCheck, Vector3.Down, out var rayCastHit, layerMask: 1 << 3))
             if(rayCastHit.Distance < 70) return;
         rb.AddForce(Vector3.Down * 9.8f, ForceMode.VelocityChange);
+    }
+
+    private void SendPacket()
+    {
+        
     }
     
     /*
