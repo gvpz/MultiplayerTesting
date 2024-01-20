@@ -42,7 +42,8 @@
 					"Y": 150.0,
 					"Z": -300.0
 				}
-			}
+			},
+			"FOV": 75.0
 		},
 		{
 			"ID": "3fbe6d5642a991a6703df1997f1b1b97",
@@ -177,8 +178,8 @@
 			"Name": "JoinPortInput",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 205.0,
+					"X": 15.0,
+					"Y": 228.0,
 					"Z": 0.0
 				}
 			},
@@ -296,8 +297,8 @@
 			"Name": "JoinIPInput",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 180.0,
+					"X": 15.0,
+					"Y": 203.0,
 					"Z": 0.0
 				}
 			},
@@ -415,8 +416,8 @@
 			"Name": "JoinPlayButton",
 			"Transform": {
 				"Translation": {
-					"X": 0.0,
-					"Y": 264.0,
+					"X": 15.0,
+					"Y": 287.0,
 					"Z": 0.0
 				}
 			},
@@ -514,8 +515,8 @@
 			"Name": "HostPlayButton",
 			"Transform": {
 				"Translation": {
-					"X": 750.0,
-					"Y": 264.0,
+					"X": 765.0,
+					"Y": 287.0,
 					"Z": 0.0
 				}
 			},
@@ -613,8 +614,8 @@
 			"Name": "HostPortInput",
 			"Transform": {
 				"Translation": {
-					"X": 750.0,
-					"Y": 205.0,
+					"X": 765.0,
+					"Y": 228.0,
 					"Z": 0.0
 				}
 			},
@@ -732,8 +733,8 @@
 			"Name": "HostIPLabel",
 			"Transform": {
 				"Translation": {
-					"X": 750.0,
-					"Y": 180.0,
+					"X": 765.0,
+					"Y": 203.0,
 					"Z": 0.0
 				}
 			},

@@ -59,8 +59,6 @@ public class NetworkManager : GamePlugin
         //If client is Server
         if (isServer)
         {
-            Debug.Log(peer.PopEvent(out var eventRef));
-            Debug.Log(eventRef);
             while (peer.PopEvent(out var eventData))
             {
                 Debug.Log("Server: " + eventData);
@@ -168,6 +166,8 @@ public class NetworkManager : GamePlugin
             Port = port,
         });
 
+        GameSession.Instance.localPlayer.Name = username;
+        
         if(!isConnected)
             isConnected = true;
         return !peer.Connect();

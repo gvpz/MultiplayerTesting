@@ -9,6 +9,8 @@ namespace Game;
 /// </summary>
 public class NetworkPlayer : Script
 {
+    public Player player;
+    
     /// <inheritdoc/>
     public override void OnStart()
     {

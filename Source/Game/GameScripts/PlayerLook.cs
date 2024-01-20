@@ -16,6 +16,8 @@ namespace Game
         private float _yaw;
         private float _pitch;
 
+        private static Quaternion playerRotation;
+
         public override void OnStart()
         {
             Screen.CursorLock = CursorLockMode.Locked;
@@ -23,6 +25,8 @@ namespace Game
 
             camera = Actor.GetChild<Camera>();
             playerActor = Actor;
+            
+            GameSession.Instance.localPlayer.Rotation = Actor.Orientation;
         }
 
         public override void OnUpdate()
@@ -41,11 +45,12 @@ namespace Game
             var camFactor = Mathf.Saturate(20f * Time.DeltaTime);
             camera.LocalOrientation = Quaternion.Lerp(camera.LocalOrientation, Quaternion.Euler(_pitch, 0, 0), camFactor);
             playerActor.Orientation = Quaternion.Lerp(playerActor.LocalOrientation, Quaternion.Euler(0, _yaw, 0), camFactor);
+            playerRotation = playerActor.Orientation;
         }
 
-        public static void SendRotationPacket(ref Packet changeThisToTransformPacket)
+        public static void SendRotationPacket(ref PlayerTransformPacket transformPacket)
         {
-            //Implement logic for sending rotation packet from a packet reference
+            transformPacket.rotation = playerRotation;
         }
     }
 }

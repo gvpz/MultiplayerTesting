@@ -27,6 +27,11 @@ public class PlayerMovement : Script
     {
         rb = Actor.Scene.GetChild<RigidBody>();
         rb.MaxAngularVelocity = maxSpeed;
+
+        GameSession.Instance.localPlayer.Actor = Actor;
+        GameSession.Instance.localPlayer.Position = Actor.Position;
+        GameSession.Instance.localPlayer.ID = Actor.ID;
+        GameSession.Instance.localPlayer.Name = GameSession.Instance.localPlayer.Name;
     }
 
     public override void OnEnable()
@@ -54,6 +59,7 @@ public class PlayerMovement : Script
         rb.AddRelativeForce(trueMoveDir * moveSpeed * speedMultiplier * Time.DeltaTime, ForceMode.VelocityChange);
 
         rb.LinearDamping = moveDirection == Float2.Zero ? stoppingDrag : movementDrag;
+        GameSession.Instance.localPlayer.Position = Actor.Position;
     }
 
     private void Jump()

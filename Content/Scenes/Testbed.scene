@@ -24,6 +24,14 @@
 			"Name": "GameManager"
 		},
 		{
+			"ID": "9f0680ff486e9af9fc864d8fff29e07b",
+			"TypeName": "Game.MainSceneScript",
+			"ParentID": "3d94ad5241eca8bf415035a05b905215",
+			"V": {
+	"playerPrefab": "86566d6a41f13d7c7ea020abadaaa10e"
+}
+		},
+		{
 			"ID": "69f14eee41e8f4e27205a0b2b20021db",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "0e4248184caa701b5513aaadf921e96e",

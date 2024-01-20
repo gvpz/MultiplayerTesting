@@ -14,7 +14,8 @@ public class GameSession : GamePlugin
 
     public delegate void OnPlayerRemovedHandler(Player player);
     public event OnPlayerRemovedHandler OnPlayerRemoved;
-    
+
+    public Prefab playerPrefab;
     
     public List<Player> playerList = new List<Player>();
 
@@ -23,6 +24,7 @@ public class GameSession : GamePlugin
     public override void Initialize()
     {
         localPlayer = new Player();
+        Scripting.Update += OnUpdate;
     }
 
     public override void Deinitialize()
@@ -59,13 +61,11 @@ public class GameSession : GamePlugin
     {
         for (var i = playerList.Count - 1; i >= 0; i--)
         {
-            if (playerList[i].ID == guid)
-            {
-                var player = playerList[i];
-                playerList.RemoveAt(i);
-                OnPlayerRemoved?.Invoke(player);
-                return true;
-            }
+            if (playerList[i].ID != guid) continue;
+            var player = playerList[i];
+            playerList.RemoveAt(i);
+            OnPlayerRemoved?.Invoke(player);
+            return true;
         }
 
         return false;
@@ -86,6 +86,18 @@ public class GameSession : GamePlugin
         return null;
     }
 
+    private void SendPackets()
+    {
+
+    }
+
+    private void OnUpdate()
+    {
+        if (Time.DeltaTime >= 0.016)
+        {
+            SendPackets();
+        }
+    }
 
     private static GameSession instance;
 

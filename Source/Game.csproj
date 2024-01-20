@@ -182,6 +182,7 @@
     <Compile Include="Game.Gen.cs" />
     <Compile Include="Game\GameScripts\GameSession.cs" />
     <Compile Include="Game\GameScripts\MainMenuScript.cs" />
+    <Compile Include="Game\GameScripts\MainSceneScript.cs" />
     <Compile Include="Game\GameScripts\Player.cs" />
     <Compile Include="Game\GameScripts\PlayerInput.cs" />
     <Compile Include="Game\GameScripts\PlayerLook.cs" />

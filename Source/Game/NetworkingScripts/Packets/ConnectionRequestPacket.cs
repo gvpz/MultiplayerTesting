@@ -1,4 +1,5 @@
-﻿using FlaxEngine;
+﻿using System;
+using FlaxEngine;
 using FlaxEngine.Networking;
 
 namespace Game;
@@ -23,16 +24,15 @@ public class ConnectionRequestPacket : Packet
     public override void ServerHandler(ref NetworkConnection connection)
     {
         Debug.Log("Received Connection Request");
-        //Sends a connection response
+        //Sends a connection response.  Logic for acceptance required
         ConnectionResponsePacket responsePacket = new ConnectionResponsePacket();
         responsePacket.ID = NetworkManager.Instance.GuidByConnection(ref connection);
         responsePacket.SceneID = Level.GetScene(0).ID;
-        
-        //Logic for acceptance required
         responsePacket.State = ConnectionResponsePacket.ConnectionState.Accepted;
-        GameSession.Instance.GetPlayer(responsePacket.ID).Name = Username;
-        
         NetworkManager.Instance.Send(responsePacket, NetworkChannelType.ReliableOrdered, ref connection);
+
+        //GameSession.Instance.GetPlayer(responsePacket.ID);
+        
         
         //Send all initial packets needed
     }
