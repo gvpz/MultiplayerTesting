@@ -1,0 +1,20 @@
+{
+  "Name": "GameEditorTarget",
+  "Platform": "Windows",
+  "Architecture": "x64",
+  "Configuration": "Debug",
+  "HotReloadPostfix": "",
+  "BinaryModules": [
+    {
+      "Name": "Game",
+      "NativePath": "",
+      "ManagedPath": "$(ProjectPath)/Binaries/GameEditorTarget/Windows/x64/Debug/Game.CSharp.dll"
+    }
+  ],
+  "References": [
+    {
+      "ProjectPath": "$(EnginePath)/Flax.flaxproj",
+      "Path": "$(EnginePath)/Binaries/Editor/Win64/Debug/FlaxEditor.Build.json"
+    }
+  ]
+}

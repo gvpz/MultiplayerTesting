@@ -22,6 +22,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b775ba2b70364d08980f0683a041d102513b10/7e/d2247e97/NetworkConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/31284a14e6befcc7a1995b27d210bba1846c1/LibraryImports.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/GameScripts/MainMenuScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Game/GameScripts/MainSceneScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/GameScripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/GameScripts/SceneManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/ConnectionManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -44,6 +45,7 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.Game.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -115,7 +117,9 @@
       <workItem from="1705613072315" duration="256000" />
       <workItem from="1705628619680" duration="10946000" />
       <workItem from="1705683426616" duration="16352000" />
-      <workItem from="1705764306982" duration="5249000" />
+      <workItem from="1705764306982" duration="18397000" />
+      <workItem from="1705803680268" duration="1350000" />
+      <workItem from="1705866825766" duration="15376000" />
     </task>
     <servers />
   </component>

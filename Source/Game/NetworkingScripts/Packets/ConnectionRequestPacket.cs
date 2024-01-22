@@ -13,11 +13,13 @@ public class ConnectionRequestPacket : Packet
     
     public override void Serialize(ref NetworkMessage message)
     {
+        Debug.Log("Serializing Request Packet");
         message.WriteString(Username);
     }
 
     public override void Deserialize(ref NetworkMessage message)
     {
+        Debug.Log("Deserializing Request Packet");
         Username = message.ReadString();
     }
 
@@ -25,10 +27,12 @@ public class ConnectionRequestPacket : Packet
     {
         Debug.Log("Received Connection Request");
         //Sends a connection response.  Logic for acceptance required
-        ConnectionResponsePacket responsePacket = new ConnectionResponsePacket();
-        responsePacket.ID = NetworkManager.Instance.GuidByConnection(ref connection);
-        responsePacket.SceneID = Level.GetScene(0).ID;
-        responsePacket.State = ConnectionResponsePacket.ConnectionState.Accepted;
+        ConnectionResponsePacket responsePacket = new ConnectionResponsePacket
+        {
+            ID = NetworkManager.Instance.GuidByConnection(ref connection),
+            SceneID = Level.GetScene(0).ID,
+            State = ConnectionResponsePacket.ConnectionState.Accepted
+        };
         NetworkManager.Instance.Send(responsePacket, NetworkChannelType.ReliableOrdered, ref connection);
 
         //GameSession.Instance.GetPlayer(responsePacket.ID);

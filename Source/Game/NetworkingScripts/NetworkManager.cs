@@ -5,7 +5,6 @@ using System.Net.Sockets;
 using System.Threading.Tasks;
 using FlaxEngine;
 using FlaxEngine.Networking;
-using Debug = FlaxEngine.Debug;
 
 namespace Game;
 
@@ -29,13 +28,16 @@ public class NetworkManager : GamePlugin
     public override void Initialize()
     {
         base.Initialize();
+        isConnected = false;
         packetManager = new PacketManager();
-        connectionManager = new ConnectionManager();
 
         //Register Packets
         packetManager.Register<ConnectionRequestPacket>();
         packetManager.Register<ConnectionResponsePacket>();
+        packetManager.Register<PlayerListPacket>();
+        packetManager.Register<PlayerTransformPacket>();
 
+        connectionManager = new ConnectionManager();
         GetPublicIPAddress();
         Scripting.Update += OnUpdate;
     }
@@ -61,7 +63,6 @@ public class NetworkManager : GamePlugin
         {
             while (peer.PopEvent(out var eventData))
             {
-                Debug.Log("Server: " + eventData);
                 switch (eventData.EventType)
                 {
                     case NetworkEventType.Connected:
@@ -69,6 +70,7 @@ public class NetworkManager : GamePlugin
                         packetManager.Receive(ref eventData, isServer);
                         connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
                         Debug.Log(eventData.Sender + " has connected!");
+                        Debug.Log("After return statement: " + eventData.Message.Length + " " + eventData.Sender.ConnectionId + " " + eventData.EventType);
                         break;
                     }
                     case NetworkEventType.Disconnected:
@@ -95,7 +97,7 @@ public class NetworkManager : GamePlugin
         {
             while (peer.PopEvent(out var eventData))
             {
-                Debug.Log("Client: " + eventData);
+                if (eventData.Message.Length == 0) return;
                 switch (eventData.EventType)
                 {
                     case NetworkEventType.Message:
@@ -110,6 +112,7 @@ public class NetworkManager : GamePlugin
                         Send(new ConnectionRequestPacket { Username = GameSession.Instance.localPlayer.Name },
                             NetworkChannelType.ReliableOrdered);
                         Debug.Log("Sent connection request packet");
+                        Debug.Log("After return statement: " + eventData.Message.Length + " " + eventData.Sender.ConnectionId + " " + eventData.EventType);
                         break;
                     }
                     case NetworkEventType.Disconnected:
@@ -155,16 +158,19 @@ public class NetworkManager : GamePlugin
     //Connects player to IP (address) and Port (port) with a Username (username)
     public bool Connect(string username, string address, ushort port)
     {
-        Debug.Log("Connecting");
-        peer = NetworkPeer.CreatePeer(new NetworkConfig
+        if (peer == null)
         {
-            NetworkDriver = new ENetDriver(),
-            ConnectionsLimit = 32,
-            MessagePoolSize = 256,
-            MessageSize = 1500,
-            Address = address,
-            Port = port,
-        });
+            Debug.Log("Connecting");
+            peer = NetworkPeer.CreatePeer(new NetworkConfig
+            {
+                NetworkDriver = new ENetDriver(),
+                ConnectionsLimit = 32,
+                MessagePoolSize = 256,
+                MessageSize = 1500,
+                Address = address,
+                Port = port,
+            });
+        }
 
         GameSession.Instance.localPlayer.Name = username;
         

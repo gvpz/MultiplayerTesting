@@ -21,6 +21,7 @@ public class ConnectionResponsePacket : Packet
 
     public override void Serialize(ref NetworkMessage message)
     {
+        Debug.Log("Serializing Response Packet");
         message.WriteByte((byte)State);
         var bytes = ID.ToByteArray();
         message.WriteInt32(bytes.Length);
@@ -33,6 +34,7 @@ public class ConnectionResponsePacket : Packet
 
     public override void Deserialize(ref NetworkMessage message)
     {
+        Debug.Log("Deserializing Response Packet");
         State = (ConnectionState)message.ReadByte();
         var length = message.ReadInt32();
         byte[] bytes = new byte[length];
