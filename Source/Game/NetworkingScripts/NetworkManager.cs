@@ -52,7 +52,8 @@ public class NetworkManager : GamePlugin
         if (instance == this)
             instance = null;
     }
-    
+
+    private bool test = false;
     public void OnUpdate()
     {
         if (!isConnected)
@@ -68,8 +69,7 @@ public class NetworkManager : GamePlugin
                     //Server received connected event type
                     case NetworkEventType.Connected:
                     {
-                        packetManager.Receive(ref eventData, isServer);
-                        connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
+                            connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
                         Debug.Log(eventData.Sender + " has connected!");
                         Debug.Log("After return statement: " + eventData.Message.Length + " " + eventData.Sender.ConnectionId + " " + eventData.EventType);
                         break;
