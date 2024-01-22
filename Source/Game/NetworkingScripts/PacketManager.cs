@@ -18,6 +18,7 @@ public class PacketManager
         packets.Add(typeof(T).Name.DeterministicHash(), typeof(T));
     }
     
+    //Handles packet when network event is received
     public void Receive(ref NetworkEvent eventData, bool isServer = false)
     {
         try
@@ -54,6 +55,7 @@ public class PacketManager
         }
     }
 
+    //Hashes and serializes packet with referenced network message
     public void Send(Packet packet, ref NetworkMessage message)
     {
         Debug.Log("From Send Before Hash: " + packet + " " + message.Length);
