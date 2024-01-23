@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using FlaxEngine;
+using FlaxEngine.Networking;
 
 namespace Game;
 
@@ -9,13 +10,9 @@ namespace Game;
 /// </summary>
 public class MainSceneScript : Script
 {
-    public Prefab playerPrefab;
+    public Prefab networkPlayerPrefab;
+    private float lastTransformPacketSent;
     
-    
-    public override void OnStart()
-    {
-        
-    }
     
     public override void OnEnable()
     {
@@ -31,7 +28,7 @@ public class MainSceneScript : Script
 
     public void OnPlayerAdded(Player player)
     {
-        player.Actor = PrefabManager.SpawnPrefab(playerPrefab);;
+        player.Actor = PrefabManager.SpawnPrefab(networkPlayerPrefab, Actor);
         var playerScript = player.Actor.GetScript<NetworkPlayer>();
         playerScript.player = player;
         player.Actor.Name = "Player_" + player.Name;
@@ -44,6 +41,23 @@ public class MainSceneScript : Script
 
     public override void OnUpdate()
     {
-        
+        if (!NetworkManager.Instance.IsServer || !(Time.UnscaledGameTime - lastTransformPacketSent >= 0.01f)) return;
+        var transformEntry = new AllPlayerTransformsPacket.TransformEntry();
+        var transformPacket = new AllPlayerTransformsPacket();
+        foreach (var player in GameSession.Instance.playerList)
+        {
+            transformEntry.Guid = player.ID;
+            transformEntry.Position = player.Position;
+            transformEntry.Rotation = player.Rotation;
+            transformPacket.Transforms.Add(transformEntry);
+        }
+
+        transformEntry.Guid = GameSession.Instance.localPlayer.ID;
+        transformEntry.Position = GameSession.Instance.localPlayer.Position;
+        transformEntry.Rotation = GameSession.Instance.localPlayer.Rotation;
+        transformPacket.Transforms.Add(transformEntry);
+
+        NetworkManager.Instance.SendAll(transformPacket, NetworkChannelType.UnreliableOrdered);
+        lastTransformPacketSent = Time.UnscaledGameTime;
     }
 }

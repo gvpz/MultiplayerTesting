@@ -27,7 +27,7 @@ public class PlayerTransformPacket : Packet
 
     public override void ServerHandler(ref NetworkConnection connection)
     {
-        Guid guid = NetworkManager.Instance.GuidByConnection(ref connection);
+        var guid = NetworkManager.Instance.GuidByConnection(ref connection);
         var player = GameSession.Instance.GetPlayer(guid);
         player.Position = position;
         player.Rotation = rotation;

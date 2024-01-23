@@ -28,9 +28,11 @@
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/ConnectionManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Hashing.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/PacketManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/AllPlayerTransformsPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/ConnectionRequestPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/ConnectionResponsePacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/Packet.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/PlayerConnectedPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/PlayerListPacket.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Source/Game/NetworkingScripts/Packets/PlayerTransformPacket.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -120,7 +122,7 @@
       <workItem from="1705764306982" duration="18397000" />
       <workItem from="1705803680268" duration="1350000" />
       <workItem from="1705866825766" duration="15376000" />
-      <workItem from="1705930371718" duration="3802000" />
+      <workItem from="1705930371718" duration="17248000" />
     </task>
     <servers />
   </component>

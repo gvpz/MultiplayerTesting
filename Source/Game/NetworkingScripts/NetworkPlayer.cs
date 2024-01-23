@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using FlaxEngine;
+using FlaxEngine.GUI;
 
 namespace Game;
 
@@ -10,28 +11,16 @@ namespace Game;
 public class NetworkPlayer : Script
 {
     public Player player;
-    
-    /// <inheritdoc/>
-    public override void OnStart()
-    {
-        // Here you can add code that needs to be called when script is created, just before the first game update
-    }
-    
-    /// <inheritdoc/>
-    public override void OnEnable()
-    {
-        // Here you can add code that needs to be called when script is enabled (eg. register for events)
-    }
 
-    /// <inheritdoc/>
-    public override void OnDisable()
-    {
-        // Here you can add code that needs to be called when script is disabled (eg. unregister from events)
-    }
-
-    /// <inheritdoc/>
     public override void OnUpdate()
     {
-        // Here you can add code that needs to be called every frame
+        var transform = Actor.Transform;
+        transform.Translation = Vector3.Lerp(transform.Translation, player.Position, 0.04f);
+        transform.Orientation = Quaternion.Lerp(transform.Orientation, player.Rotation, 0.04f);
+        Actor.Transform = transform;
+
+        var label = Actor.FindActor<UIControl>();
+        label.Get<Label>().Text = player.Name;
+        Actor.Name = "Player_" + player.Name;
     }
 }

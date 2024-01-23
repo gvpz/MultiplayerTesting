@@ -193,9 +193,11 @@
     <Compile Include="Game\NetworkingScripts\NetworkManager.cs" />
     <Compile Include="Game\NetworkingScripts\NetworkPlayer.cs" />
     <Compile Include="Game\NetworkingScripts\PacketManager.cs" />
+    <Compile Include="Game\NetworkingScripts\Packets\AllPlayerTransformsPacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\ConnectionRequestPacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\ConnectionResponsePacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\Packet.cs" />
+    <Compile Include="Game\NetworkingScripts\Packets\PlayerConnectedPacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\PlayerListPacket.cs" />
     <Compile Include="Game\NetworkingScripts\Packets\PlayerTransformPacket.cs" />
     <Compile Visible="false" Include="C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Intermediate\GameEditorTarget\Windows\x64\Debug\Game\Game.Bindings.Gen.cs" />

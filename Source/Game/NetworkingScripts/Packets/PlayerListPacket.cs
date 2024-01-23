@@ -14,9 +14,9 @@ public class PlayerListPacket : Packet
     
     public override void Serialize(ref NetworkMessage message)
     {
-        int length = playerList.Count + 1;
+        var length = playerList.Count + 1;
         message.WriteInt32(length);
-        foreach (Player player in playerList)
+        foreach (var player in playerList)
         {
             message.WriteString(player.Name);
             message.WriteGuid(player.ID);
@@ -35,7 +35,7 @@ public class PlayerListPacket : Packet
         {
             var guid = message.ReadGuid();
             var username = message.ReadString();
-            Player player = new Player() {ID = guid, Name = username};
+            var player = new Player() {ID = guid, Name = username};
             playerList.Add(player);
         }
     }

@@ -1,5 +1,5 @@
-﻿using System.Numerics;
-using FlaxEngine;
+﻿using FlaxEngine;
+using FlaxEngine.Networking;
 using Vector3 = FlaxEngine.Vector3;
 
 namespace Game;
@@ -19,6 +19,8 @@ public class PlayerMovement : Script
     private float movementDrag = 5;
     private float stoppingDrag = 10;
     private Float2 moveDirection;
+
+    private float lastPacketSent;
 
     private bool IsGrounded() => Physics.RayCast(groundCheck, Vector3.Down, 15f, layerMask: 1 << 3);
     
@@ -48,6 +50,11 @@ public class PlayerMovement : Script
     {
         Move();
         DetermineGravity();
+
+        if (Time.UnscaledGameTime - lastPacketSent >= 0.01f)
+        {
+            SendTransformPacket();
+        }
     }
 
     private void Move()
@@ -77,19 +84,14 @@ public class PlayerMovement : Script
         rb.AddForce(Vector3.Down * 9.8f, ForceMode.VelocityChange);
     }
 
-    private void SendPacket()
+    private void SendTransformPacket()
     {
-        
+        var packet = new PlayerTransformPacket
+        {
+            position = rb.Transform.Translation,
+            rotation = rb.Transform.Orientation
+        };
+        NetworkManager.Instance.Send(packet, NetworkChannelType.UnreliableOrdered);
+        lastPacketSent = Time.UnscaledGameTime;
     }
-    
-    /*
-     *  WHAT IS NEEDED FOR NETWORKING
-     *
-     *  
-     *  packet
-     *  all packages needed for sending (pos, input, 
-     *  
-     * 
-     * 
-     */
 }

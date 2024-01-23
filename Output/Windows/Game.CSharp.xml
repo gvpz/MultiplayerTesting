@@ -59,21 +59,14 @@
             NetworkPlayer Script.
             </summary>
         </member>
-        <member name="M:Game.NetworkPlayer.OnStart">
-            <inheritdoc/>
-        </member>
-        <member name="M:Game.NetworkPlayer.OnEnable">
-            <inheritdoc/>
-        </member>
-        <member name="M:Game.NetworkPlayer.OnDisable">
-            <inheritdoc/>
-        </member>
-        <member name="M:Game.NetworkPlayer.OnUpdate">
-            <inheritdoc/>
-        </member>
         <member name="T:Game.PacketManager">
             <summary>
             PacketManager Script.
+            </summary>
+        </member>
+        <member name="T:Game.AllPlayerTransformsPacket">
+            <summary>
+            AllPlayerTransformsPacket Script.
             </summary>
         </member>
         <member name="T:Game.ConnectionRequestPacket">
@@ -89,6 +82,11 @@
         <member name="T:Game.Packet">
             <summary>
             Packet Script.
+            </summary>
+        </member>
+        <member name="T:Game.PlayerConnectedPacket">
+            <summary>
+            PlayerConnectedPacket Script.
             </summary>
         </member>
         <member name="T:Game.PlayerListPacket">

@@ -6,12 +6,12 @@
 	{
 		"ID": "abd3ea8042628e77c4d8f8a0e9335a0d",
 		"TypeName": "FlaxEngine.RigidBody",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "NetworkPlayer",
-		"Mass": 163.6246337890625
+		"Mass": 163.6246337890625,
+		"Constraints": 56
 	},
 	{
-		"ID": "55b7c97148bc942d2c51d2b4e1dfd616",
+		"ID": "92b006004090dface1698796d73af00c",
 		"TypeName": "Game.NetworkPlayer",
 		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
 		"V": {}
@@ -82,6 +82,103 @@
 				}
 			]
 		}
+	},
+	{
+		"ID": "1169c56546ce0260d9b93d9ce54fba91",
+		"TypeName": "FlaxEngine.UICanvas",
+		"ParentID": "abd3ea8042628e77c4d8f8a0e9335a0d",
+		"Name": "UICanvas",
+		"V": {
+	"RenderMode": 3,
+	"IgnoreDepth": true,
+	"Size": {
+		"X": 500.0,
+		"Y": 500.0
+	}
+}
+	},
+	{
+		"ID": "4122ef7c496d95df6be177b63c01976a",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "1169c56546ce0260d9b93d9ce54fba91",
+		"Name": "Label",
+		"Control": "FlaxEngine.GUI.Label",
+		"Data": {
+	"Text": "Player",
+	"TextColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"TextColorHighlighted": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"HorizontalAlignment": 1,
+	"VerticalAlignment": 1,
+	"Wrapping": 0,
+	"BaseLinesGapScale": 1.0,
+	"Font": {
+		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Size": 20.0
+	},
+	"Material": null,
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"ClipText": false,
+	"AutoWidth": false,
+	"AutoHeight": false,
+	"AutoFitText": false,
+	"AutoFitTextRange": {
+		"X": 0.1,
+		"Y": 100.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 400.0,
+		"Top": 0.0,
+		"Bottom": 477.42026
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
 	}
 ]
 }

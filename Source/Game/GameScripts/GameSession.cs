@@ -24,7 +24,6 @@ public class GameSession : GamePlugin
     public override void Initialize()
     {
         localPlayer = new Player();
-        Scripting.Update += OnUpdate;
     }
 
     public override void Deinitialize()
@@ -84,19 +83,6 @@ public class GameSession : GamePlugin
         }
 
         return null;
-    }
-
-    private void SendPackets()
-    {
-
-    }
-
-    private void OnUpdate()
-    {
-        if (Time.DeltaTime >= 0.016)
-        {
-            SendPackets();
-        }
     }
 
     private static GameSession instance;

@@ -23,12 +23,9 @@ public class PacketManager
     {
         try
         {
-            Debug.Log($"Message Length before ReadInt32: {eventData.Message.Length}");
-            Debug.Log($"Message Read Position before ReadInt32: {eventData.Message.Position}");
+            var name = eventData.Message.ReadString();
+            Debug.Log("Packet Name = " + name);
             var t = eventData.Message.ReadInt32();
-            Debug.Log($"Received hash: {t}");
-            Debug.Log($"Message Read Position after ReadInt32: {eventData.Message.Position}");
-
 
             if (!packets.ContainsKey(t))
             {
@@ -58,11 +55,8 @@ public class PacketManager
     //Hashes and serializes packet with referenced network message
     public void Send(Packet packet, ref NetworkMessage message)
     {
-        Debug.Log("From Send Before Hash: " + packet + " " + message.Length);
+        message.WriteString(packet.GetType().Name);
         message.WriteInt32(packet.GetType().Name.DeterministicHash());
-        Debug.Log("From Send After Hash Assignment: " + packet + " " + message.Length);
         packet.Serialize(ref message);
-        Debug.Log("From Send After Serialize: " + packet + " " + message.Length);
-        Debug.Log($"Hash for {packet} = {packet.GetType().Name.DeterministicHash()}");
     }
 }

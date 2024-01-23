@@ -21,7 +21,6 @@ public class ConnectionResponsePacket : Packet
 
     public override void Serialize(ref NetworkMessage message)
     {
-        Debug.Log("Serializing Response Packet");
         message.WriteByte((byte)State);
         var bytes = ID.ToByteArray();
         message.WriteInt32(bytes.Length);
@@ -34,7 +33,6 @@ public class ConnectionResponsePacket : Packet
 
     public override void Deserialize(ref NetworkMessage message)
     {
-        Debug.Log("Deserializing Response Packet");
         State = (ConnectionState)message.ReadByte();
         var length = message.ReadInt32();
         byte[] bytes = new byte[length];
@@ -49,17 +47,14 @@ public class ConnectionResponsePacket : Packet
 
     public override void ClientHandler()
     {
-        Debug.Log("Received Connection Response");
         if (State == ConnectionState.Accepted)
         {
-            Debug.Log("Server accepted connection");
             GameSession.Instance.localPlayer.ID = ID;
             SceneManager.Instance.LoadScene(SceneID, Level.GetScene(0));
         }
         else
         {
             NetworkManager.Instance.Disconnect();
-            Debug.Log("Connection Rejected");
         }
     }
 }

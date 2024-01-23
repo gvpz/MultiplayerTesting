@@ -32,8 +32,10 @@ public class NetworkManager : GamePlugin
         packetManager = new PacketManager();
 
         //Register Packets
+        packetManager.Register<AllPlayerTransformsPacket>();
         packetManager.Register<ConnectionRequestPacket>();
         packetManager.Register<ConnectionResponsePacket>();
+        packetManager.Register<PlayerConnectedPacket>();
         packetManager.Register<PlayerListPacket>();
         packetManager.Register<PlayerTransformPacket>();
 
@@ -53,7 +55,6 @@ public class NetworkManager : GamePlugin
             instance = null;
     }
 
-    private bool test = false;
     public void OnUpdate()
     {
         if (!isConnected)
@@ -69,9 +70,7 @@ public class NetworkManager : GamePlugin
                     //Server received connected event type
                     case NetworkEventType.Connected:
                     {
-                            connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
-                        Debug.Log(eventData.Sender + " has connected!");
-                        Debug.Log("After return statement: " + eventData.Message.Length + " " + eventData.Sender.ConnectionId + " " + eventData.EventType);
+                        connectionManager.Add(ref eventData.Sender, GameSession.Instance.AddPlayer());
                         break;
                     }
                     //Server received disconnected or timeout event type
@@ -82,7 +81,6 @@ public class NetworkManager : GamePlugin
                         var guid = GuidByConnection(ref eventData.Sender);
                         connectionManager.Remove(ref guid);
                         GameSession.Instance.RemovePlayer(ref guid);
-                        Debug.Log(eventData.Sender + " has disconnected!");
                         break;
                     }
                     //Server received message event type
@@ -109,7 +107,6 @@ public class NetworkManager : GamePlugin
                     {
                         packetManager.Receive(ref eventData, isServer);
                         peer.RecycleMessage(eventData.Message);
-                        Debug.Log("Message Received");
                         break;
                     }
                     //Client received connected event type
@@ -117,8 +114,6 @@ public class NetworkManager : GamePlugin
                     {
                         Send(new ConnectionRequestPacket { Username = GameSession.Instance.localPlayer.Name },
                             NetworkChannelType.ReliableOrdered);
-                        Debug.Log("Sent connection request packet");
-                        Debug.Log("After return statement: " + eventData.Message.Length + " " + eventData.Sender.ConnectionId + " " + eventData.EventType);
                         break;
                     }
                     //Client received disconnected or timeout network type
@@ -127,7 +122,6 @@ public class NetworkManager : GamePlugin
                     {
                         Disconnect();
                         NetworkPeer.ShutdownPeer(peer);
-                        Debug.Log("Timed out/Disconnected");
                         break;
                     }
                 }
@@ -158,7 +152,6 @@ public class NetworkManager : GamePlugin
         if (!peer.Listen()) return false;
         isConnected = true;
         isServer = true;
-        Debug.Log("Successfully finished NetworkManager.Host()");
         return true;
     } 
 
@@ -167,7 +160,6 @@ public class NetworkManager : GamePlugin
     {
         if (peer == null)
         {
-            Debug.Log("Connecting");
             peer = NetworkPeer.CreatePeer(new NetworkConfig
             {
                 NetworkDriver = new ENetDriver(),
@@ -219,6 +211,16 @@ public class NetworkManager : GamePlugin
         peer.EndSendMessage(type, message, connection);
     }
     
+    //Send packet via network type to all clients
+    public void SendAll(Packet packet, NetworkChannelType type)
+    {
+        if (!isServer || !isConnected)
+            return;
+        var msg = peer.BeginSendMessage();
+        packetManager.Send(packet, ref msg);
+        peer.EndSendMessage(type, msg, connectionManager.ToArray());
+    }
+    
     //Returns Guid with reference to a network connection
     public Guid GuidByConnection(ref NetworkConnection connection)
     {
@@ -250,7 +252,6 @@ public class NetworkManager : GamePlugin
     public async void GetPublicIPAddress()
     {
         ipAddress = await GetIpAddress();
-        Debug.Log("IP: " + ipAddress);
     }
     
     private static NetworkManager instance;

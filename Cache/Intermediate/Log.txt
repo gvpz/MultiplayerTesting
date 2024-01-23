@@ -1,78 +1,43 @@
-[00:00:010] Flax.Build 1.0.0
-[00:00:010]   Arguments: -log -mutex "-workspace=C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing" -arch=x64 -configuration=Debug -platform=Windows -buildTargets=GameEditorTarget -build
-[00:00:010]   Workspace: C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing
-[00:00:010]   Engine: C:\Program Files (x86)\Flax\Flax_1.7
+[00:00:011] Flax.Build 1.0.0
+[00:00:011]   Arguments: -log -mutex -genproject
+[00:00:011]   Workspace: C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing
+[00:00:011]   Engine: C:\Program Files (x86)\Flax\Flax_1.7
 [00:00:011]   .NET 7.0.11
-[00:00:015] Loading project file from "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.flaxproj"...
-[00:00:052] Loading project file from "C:\Program Files (x86)\Flax\Flax_1.7\Flax.flaxproj"...
-[00:00:054] Loaded project Flax, version 1.7.6407.2
-[00:00:054] Loaded project Multiplayer Testing, version 1.0
-[00:00:085] Engine build version: 1.7.6407.2
-[00:00:114] Building targets...
-[00:00:145] Missing Android SDK. Cannot build for Android platform.
-[00:00:145] Missing Linux Toolchain. Cannot build for Linux platform.
-[00:00:166] Found VisualStudio2022 at C:\Program Files\Microsoft Visual Studio\2022\Community
-[00:00:168] Missing Windows SDK. Cannot build for Windows platform.
-[00:00:171] Building C# only
-[00:00:171] Building target GameEditorTarget in Debug for Windows x64
-[00:00:178] Building referenced target Flax
-[00:00:190] Parsing API bindings for Profiler (FlaxEngine)
-[00:00:272] Parsing API bindings for Platform (FlaxEngine)
-[00:00:390] Parsing API bindings for Core (FlaxEngine)
-[00:01:207] Parsing API bindings for Debug (FlaxEngine)
-[00:01:255] Parsing API bindings for Physics (FlaxEngine)
-[00:01:397] Parsing API bindings for TextureTool (FlaxEngine)
-[00:01:410] Parsing API bindings for ModelTool (FlaxEngine)
-[00:01:429] Found VulkanSDK at: C:\VulkanSDK\1.3.268.0
-[00:01:429] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
-[00:01:442] Found the following .NET SDK versions: 7.0.401
-[00:01:442] Found the following .NET runtime versions: 7.0.11, 6.0.22
-[00:01:446] Using .NET SDK 7.0.401, runtime 7.0.11 (C:\Program Files\dotnet\)
-[00:01:447]   - Host Runtime for Windows x64
-[00:01:447]   - Host Runtime for Windows x86
-[00:01:447]   - Host Runtime for Windows ARM64
-[00:01:450] Parsing API bindings for ShaderCompilerD3D (FlaxEngine)
-[00:01:451] Parsing API bindings for Graphics (FlaxEngine)
-[00:01:771] Parsing API bindings for Utilities (FlaxEngine)
-[00:01:776] Parsing API bindings for Particles (FlaxEngine)
-[00:01:792] Parsing API bindings for Visject (FlaxEngine)
-[00:01:803] Parsing API bindings for ContentImporters (FlaxEngine)
-[00:01:804] Parsing API bindings for ContentExporters (FlaxEngine)
-[00:01:804] Parsing API bindings for Content (FlaxEngine)
-[00:01:871] Parsing API bindings for Renderer (FlaxEngine)
-[00:01:888] Parsing API bindings for Scripting (FlaxEngine)
-[00:01:908] Parsing API bindings for Serialization (FlaxEngine)
-[00:01:911] Parsing API bindings for CSG (FlaxEngine)
-[00:01:911] Parsing API bindings for Level (FlaxEngine)
-[00:02:074] Parsing API bindings for Navigation (FlaxEngine)
-[00:02:085] Parsing API bindings for AI (FlaxEngine)
-[00:02:103] Parsing API bindings for Animations (FlaxEngine)
-[00:02:149] Parsing API bindings for Audio (FlaxEngine)
-[00:02:168] Parsing API bindings for Foliage (FlaxEngine)
-[00:02:196] Parsing API bindings for Render2D (FlaxEngine)
-[00:02:221] Parsing API bindings for Input (FlaxEngine)
-[00:02:251] Parsing API bindings for Networking (FlaxEngine)
-[00:02:278] Parsing API bindings for Streaming (FlaxEngine)
-[00:02:281] Parsing API bindings for Terrain (FlaxEngine)
-[00:02:290] Parsing API bindings for Threading (FlaxEngine)
-[00:02:296] Parsing API bindings for Localization (FlaxEngine)
-[00:02:305] Parsing API bindings for UI (FlaxEngine)
-[00:02:313] Parsing API bindings for Online (FlaxEngine)
-[00:02:316] Parsing API bindings for Engine (FlaxEngine)
-[00:02:327] Parsing API bindings for Editor (FlaxEngine)
-[00:02:340] Skipping build for target FlaxEditor
-[00:02:359] Generating binary module bindings for Game
-[00:02:361] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.Gen.cs
-[00:02:361] Building module Game
-[00:02:366] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache/Intermediate\GameEditorTarget\Windows\x64\Debug\Game.CSharp.response
-[00:02:373] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Binaries\GameEditorTarget\Windows\x64\Debug\GameEditorTarget.Build.json
-[00:02:379] Found 8 valid and 0 invalid actions in Task Graph cache
-[00:02:380] 
-[00:02:380] Total 3 tasks
-[00:02:380] Executing 1 task using 1 thread
-[00:02:382] Compiling C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Binaries\GameEditorTarget\Windows\x64\Debug\Game.CSharp.dll
-[00:03:896] C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\GameScripts\PlayerLook.cs(13,23,13,34): warning CS0414: The field 'PlayerLook.sensitivity' is assigned but its value is never used
-[00:03:896] C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game\GameScripts\PlayerLook.cs(14,23,14,41): warning CS0414: The field 'PlayerLook.rotationMultiplier' is assigned but its value is never used
-[00:03:904] Done!
-[00:03:910] Total time: 00:00:03.9302233
-[00:03:910] End.
+[00:00:017] Loading project file from "C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.flaxproj"...
+[00:00:054] Loading project file from "C:\Program Files (x86)\Flax\Flax_1.7\Flax.flaxproj"...
+[00:00:055] Loaded project Flax, version 1.7.6407.2
+[00:00:055] Loaded project Multiplayer Testing, version 1.0
+[00:00:087] Engine build version: 1.7.6407.2
+[00:00:113] Generating project files...
+[00:00:127] Missing Android SDK. Cannot build for Android platform.
+[00:00:128] Missing Linux Toolchain. Cannot build for Linux platform.
+[00:00:145] Found VisualStudio2022 at C:\Program Files\Microsoft Visual Studio\2022\Community
+[00:00:147] Missing Windows SDK. Cannot build for Windows platform.
+[00:00:181] Found VulkanSDK at: C:\VulkanSDK\1.3.268.0
+[00:00:182] Building for Windows without Vulkan rendering backend (Vulkan SDK is missing)
+[00:00:194] Found the following .NET SDK versions: 7.0.401
+[00:00:195] Found the following .NET runtime versions: 7.0.11, 6.0.22
+[00:00:197] Using .NET SDK 7.0.401, runtime 7.0.11 (C:\Program Files\dotnet\)
+[00:00:198]   - Host Runtime for Windows x64
+[00:00:198]   - Host Runtime for Windows x86
+[00:00:198]   - Host Runtime for Windows ARM64
+[00:00:485] Game -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.csproj
+[00:00:547] Saved file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.csproj
+[00:00:548] Project BuildScripts -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\BuildScripts.csproj
+[00:00:556] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\BuildScripts.csproj
+[00:00:556] Solution -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln
+[00:00:569] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln
+[00:00:579] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln.DotSettings.user
+[00:00:580] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
+[00:00:589] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\Flax.Build.CSharp.targets
+[00:00:837] Game -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.csproj
+[00:00:838] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Source\Game.csproj
+[00:00:838] Project BuildScripts -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\BuildScripts.csproj
+[00:00:838] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\BuildScripts.csproj
+[00:00:838] Solution -> C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln
+[00:00:839] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln
+[00:00:840] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Multiplayer Testing.sln.DotSettings.user
+[00:00:840] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\Flax.Build.CSharp.SkipBuild.targets
+[00:00:841] Skipped saving file to C:\Users\Admin\Documents\Flax Projects\Multiplayer Testing\Cache\Projects\Flax.Build.CSharp.targets
+[00:00:841] Total time: 00:00:00.8619251
+[00:00:841] End.
