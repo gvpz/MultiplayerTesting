@@ -8,7 +8,212 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f86cbd5-170a-4ba8-9c31-c6afcb556f2c" name="Changes" comment="" />
+    <list default="true" id="5f86cbd5-170a-4ba8-9c31-c6afcb556f2c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Multiplayer Testing/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Multiplayer Testing/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Game.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Game.CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Game.CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Game.CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/GameEditorTarget.Build.json" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/GameEditorTarget.Build.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameEditorTarget/Windows/x64/Development/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Game.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Game.CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Game.CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Game.CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Binaries/GameTarget/Windows/x64/Development/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/AssetsCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/AssetsCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cache/Intermediate/BuilderRules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cache/Intermediate/BuilderRules.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cache/Intermediate/BuilderRulesInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cache/Intermediate/BuilderRulesInfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/CompileLog.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/CompileLog.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b87eb610000004600000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b87eb610000004600000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b87ec2a0000004700000049" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b87ec2a0000004700000049" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b881efd0000005300000052" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b881efd0000005300000052" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b8820db0000005400000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b8820db0000005400000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b88223c0000005300000079" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000012c0b88223c0000005300000079" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c84f1050000004600000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c84f1050000004600000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8b78d00000005100000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8b78d00000005100000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8be3270000005300000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8be3270000005300000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8bfcbb000000530000004f" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000001907c8bfcbb000000530000004f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000258c0cd66500000004c00000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000258c0cd66500000004c00000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bc0ae800fc0000004700000049" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bc0ae800fc0000004700000049" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bc1b6aae3a0000004600000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bc1b6aae3a0000004600000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bcf28dd81e0000005300000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bcf28dd81e0000005300000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bcff99d1660000004700000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000002bcff99d1660000004700000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000384472f63b3000000480000006d" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000384472f63b3000000480000006d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000384a94976ba0000004400000077" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000384a94976ba0000004400000077" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000003e89a2117f00000004d00000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000003e89a2117f00000004d00000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c3e3734d50000004200000074" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c3e3734d50000004200000074" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c6eea5dca0000004d00000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c6eea5dca0000004d00000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c9eb931830000005200000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000044c9eb931830000005200000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b032f135f30000004400000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b032f135f30000004400000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b0d1a8aee00000004300000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b0d1a8aee00000004300000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b0d5857db60000005000000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000004b0d5857db60000005000000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000005142e47174b0000005600000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000005142e47174b0000005600000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000514619de10d000000450000006e" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000514619de10d000000450000006e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000578b2058e480000005000000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/00000578b2058e480000005000000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000070859410d740000004700000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000070859410d740000004700000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000076ce3e7ca7e0000004700000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/0000076ce3e7ca7e0000004700000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000007d0eb546e010000004100000065" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000007d0eb546e010000004100000065" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000008fce1d85f560000004700000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/000008fce1d85f560000004700000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/3d9b3a894c3b286d13391c8c0f67733c" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/3d9b3a894c3b286d13391c8c0f67733c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/639e12c042d34bae89dd8b817e1efc2d" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/639e12c042d34bae89dd8b817e1efc2d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/6ce7cfe8414f51ae92033e9b8325bcab" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/6ce7cfe8414f51ae92033e9b8325bcab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/f06087174bbd9f7b54d51eb8e27d450a" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/Cooked/f06087174bbd9f7b54d51eb8e27d450a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/CookedHeader_6407.bin" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/CookedHeader_6407.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/SDKs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/SDKs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/StripDotnetLibs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/StripDotnetLibs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Cooker/Windows/SystemDotnetInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Cooker/Windows/SystemDotnetInfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/BuildScripts/Windows/AnyCPU/Debug/CSharp/BuildScripts.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/BuildScripts/Windows/AnyCPU/Debug/CSharp/BuildScripts.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/BuildScripts/Windows/AnyCPU/Debug/CSharp/BuildScripts.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/BuildScripts/Windows/AnyCPU/Debug/CSharp/BuildScripts.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/BuildScripts/Windows/AnyCPU/Debug/CSharp/BuildScripts.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/BuilderRules.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/BuilderRules.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/BuilderRulesInfo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/BuilderRulesInfo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Debug/CSharp/Game.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Debug/CSharp/Game.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Debug/CSharp/Game.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Debug/CSharp/Game.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Debug/CSharp/Game.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Development/Game.CSharp.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Development/Game.CSharp.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Development/Game.CSharp.response" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameEditorTarget/Windows/x64/Development/Game.CSharp.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameTarget/Windows/x64/Development/Game.CSharp.AssemblyAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameTarget/Windows/x64/Development/Game.CSharp.AssemblyAttributes.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/GameTarget/Windows/x64/Development/Game.CSharp.response" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/GameTarget/Windows/x64/Development/Game.CSharp.response" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Intermediate/TaskGraph.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Intermediate/TaskGraph.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/ProjectCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/ProjectCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/BuildScripts.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/BuildScripts.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/BuildScripts.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/BuildScripts.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Projects/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Projects/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b87-eb61-0000-004600000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b87-eb61-0000-004600000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b87-ec2a-0000-004700000049" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b87-ec2a-0000-004700000049" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-1efd-0000-005300000052" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-1efd-0000-005300000052" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-20db-0000-005400000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-20db-0000-005400000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-223c-0000-005300000079" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000012c-0b88-223c-0000-005300000079" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c84-f105-0000-004600000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c84-f105-0000-004600000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-78d0-0000-005100000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-78d0-0000-005100000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-e327-0000-005300000041" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-e327-0000-005300000041" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-fcbb-0000-00530000004f" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000190-7c8b-fcbb-0000-00530000004f" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000258-c0cd-6650-0000-004c00000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000258-c0cd-6650-0000-004c00000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-0ae8-00fc-0000-004700000049" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-0ae8-00fc-0000-004700000049" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-1b6a-ae3a-0000-004600000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-1b6a-ae3a-0000-004600000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-f28d-d81e-0000-005300000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-f28d-d81e-0000-005300000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-ff99-d166-0000-004700000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000002bc-ff99-d166-0000-004700000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000384-472f-63b3-0000-00480000006d" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000384-472f-63b3-0000-00480000006d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000384-a949-76ba-0000-004400000077" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000384-a949-76ba-0000-004400000077" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000003e8-9a21-17f0-0000-004d00000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000003e8-9a21-17f0-0000-004d00000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-3e37-34d5-0000-004200000074" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-3e37-34d5-0000-004200000074" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-6eea-5dca-0000-004d00000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-6eea-5dca-0000-004d00000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-9eb9-3183-0000-005200000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000044c-9eb9-3183-0000-005200000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-32f1-35f3-0000-004400000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-32f1-35f3-0000-004400000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-d1a8-aee0-0000-004300000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-d1a8-aee0-0000-004300000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-d585-7db6-0000-005000000072" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000004b0-d585-7db6-0000-005000000072" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000514-2e47-174b-0000-005600000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000514-2e47-174b-0000-005600000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000514-619d-e10d-0000-00450000006e" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000514-619d-e10d-0000-00450000006e" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000578-b205-8e48-0000-005000000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000578-b205-8e48-0000-005000000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000708-5941-0d74-0000-004700000073" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/00000708-5941-0d74-0000-004700000073" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000076c-e3e7-ca7e-0000-004700000067" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/0000076c-e3e7-ca7e-0000-004700000067" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000007d0-eb54-6e01-0000-004100000065" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000007d0-eb54-6e01-0000-004100000065" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000008fc-e1d8-5f56-0000-004700000064" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/000008fc-e1d8-5f56-0000-004700000064" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/3d9b3a89-4c3b-286d-1339-1c8c0f67733c" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/3d9b3a89-4c3b-286d-1339-1c8c0f67733c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/442447fc-4205-91e6-13d5-d386f19fc423" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/442447fc-4205-91e6-13d5-d386f19fc423" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/639e12c0-42d3-4bae-89dd-8b817e1efc2d" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/639e12c0-42d3-4bae-89dd-8b817e1efc2d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/6ce7cfe8-414f-51ae-9203-3e9b8325bcab" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/6ce7cfe8-414f-51ae-9203-3e9b8325bcab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/6f702996-4a64-c08d-d211-6eae83502226" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/6f702996-4a64-c08d-d211-6eae83502226" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/92ff4249-41e6-25f2-045d-49a1616ec3b8" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/92ff4249-41e6-25f2-045d-49a1616ec3b8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/b9f6a9ea-4ffa-d93c-aad5-1b86dba65da8" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/b9f6a9ea-4ffa-d93c-aad5-1b86dba65da8" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/f0608717-4bbd-9f7b-54d5-1eb8e27d450a" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/f0608717-4bbd-9f7b-54d5-1eb8e27d450a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/fe68a2e7-4818-e227-5a4a-8db8f5257438" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/Shaders/Cache/DX_SM5/fe68a2e7-4818-e227-5a4a-8db8f5257438" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/WindowsLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/WindowsLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cache/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/Cache/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Content/AssetsCache.dat" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Content/AssetsCache.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Content/Data_0.flaxpac" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Content/Data_0.flaxpac" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Content/head" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Content/head" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/THIRD-PARTY-NOTICES.TXT" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Dotnet/THIRD-PARTY-NOTICES.TXT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/host/fxr/7.0.11/hostfxr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/.version" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/Microsoft.DiaSymReader.Native.amd64.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/Microsoft.NETCore.App.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/Microsoft.NETCore.App.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/Microsoft.Win32.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/Microsoft.Win32.Registry.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Collections.Concurrent.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Collections.Immutable.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Collections.NonGeneric.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Collections.Specialized.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Collections.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.ComponentModel.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.ComponentModel.TypeConverter.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.ComponentModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Console.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Diagnostics.DiagnosticSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Diagnostics.StackTrace.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Diagnostics.TraceSource.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Diagnostics.Tracing.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Drawing.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Formats.Asn1.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.IO.Compression.Brotli.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.IO.Compression.Native.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.IO.Compression.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.IO.MemoryMappedFiles.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Linq.Expressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Memory.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.Http.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.NameResolution.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.NetworkInformation.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.Quic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.Security.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Net.Sockets.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Numerics.Vectors.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.ObjectModel.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Private.CoreLib.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Private.Uri.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Private.Xml.Linq.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Private.Xml.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Reflection.Emit.ILGeneration.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Reflection.Emit.Lightweight.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Reflection.Emit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Reflection.Metadata.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Reflection.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Resources.Writer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.InteropServices.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.Loader.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.Numerics.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.Serialization.Formatters.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.Serialization.Primitives.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Runtime.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Security.AccessControl.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Security.Claims.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Security.Cryptography.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Security.Principal.Windows.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Text.Encoding.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Text.RegularExpressions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Threading.Channels.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Threading.Overlapped.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Threading.Thread.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Threading.ThreadPool.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Threading.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/System.Xml.XDocument.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/clretwrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/clrgc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/clrjit.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/coreclr.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/createdump.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/hostpolicy.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/mscordaccore.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/mscordaccore_amd64_amd64_7.0.1123.42427.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/mscordbi.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/mscorrc.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Dotnet/shared/Microsoft.NETCore.App/7.0.11/msquic.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/FlaxEngine.CSharp.runtimeconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/FlaxEngine.CSharp.runtimeconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Game.CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Game.CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Game.CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Game.CSharp.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/Windows/Newtonsoft.Json.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Output/Windows/Newtonsoft.Json.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/Game.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/Game.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/Game.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/Game.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Source/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +255,7 @@
     &quot;.NET Launch Settings Profile.Game.executor&quot;: &quot;Debug&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/Documents/Flax Projects/Multiplayer Testing/Source/Game&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -61,9 +267,9 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\Admin\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\Admin\\AppData\\Local\\Symbols\\src&quot;
+      &quot;C:\\Users\\Giovanni\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\Giovanni\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\Giovanni\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
 }</component>
@@ -123,6 +329,11 @@
       <workItem from="1705803680268" duration="1350000" />
       <workItem from="1705866825766" duration="15376000" />
       <workItem from="1705930371718" duration="17248000" />
+      <workItem from="1706592737034" duration="763000" />
+      <workItem from="1707597134085" duration="111000" />
+      <workItem from="1707597457279" duration="14000" />
+      <workItem from="1707599002351" duration="9000" />
+      <workItem from="1707601318311" duration="14000" />
     </task>
     <servers />
   </component>

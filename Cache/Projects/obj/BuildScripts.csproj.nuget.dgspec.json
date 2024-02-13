@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\Documents\\Flax Projects\\Multiplayer Testing\\Cache\\Projects\\BuildScripts.csproj": {}
+    "P:\\Programming\\MultiplayerTesting\\Cache\\Projects\\BuildScripts.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\Documents\\Flax Projects\\Multiplayer Testing\\Cache\\Projects\\BuildScripts.csproj": {
+    "P:\\Programming\\MultiplayerTesting\\Cache\\Projects\\BuildScripts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\Documents\\Flax Projects\\Multiplayer Testing\\Cache\\Projects\\BuildScripts.csproj",
+        "projectUniqueName": "P:\\Programming\\MultiplayerTesting\\Cache\\Projects\\BuildScripts.csproj",
         "projectName": "BuildScripts.CSharp",
-        "projectPath": "C:\\Users\\Admin\\Documents\\Flax Projects\\Multiplayer Testing\\Cache\\Projects\\BuildScripts.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\Documents\\Flax Projects\\Multiplayer Testing\\Cache\\Projects\\obj\\",
+        "projectPath": "P:\\Programming\\MultiplayerTesting\\Cache\\Projects\\BuildScripts.csproj",
+        "packagesPath": "C:\\Users\\Giovanni\\.nuget\\packages\\",
+        "outputPath": "P:\\Programming\\MultiplayerTesting\\Cache\\Projects\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Giovanni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

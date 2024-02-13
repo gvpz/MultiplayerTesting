@@ -1,1 +1,1 @@
-7.0.11;C:\Program Files/dotnet/
+7.0.10;C:\Program Files/dotnet/
